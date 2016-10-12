@@ -8,7 +8,7 @@
 </head>
 <body>
   <script>
-    class Dog{
+    /*1.class Dog{
       constructor(name){
         this.name = name;
       }
@@ -19,6 +19,27 @@
     var leo = new Dog("Leo");
     console.log(leo.name);
     leo.bark();
+    */
+    /*2.function Dog(name){
+        this.name = name;
+      }
+    Dog.prototype.bark = function(){
+      console.log("wuf! wuf!");
+    };
+    //prototype 属性使您有能力向对象添加属性和方法
+    var leo = new Dog("Leo");
+    console.log(leo.name);
+    leo.bark();*/
+    class Labrador extends Dog{
+      constructor(name){
+        super(name);
+      }
+      playWithKids(){
+        console.log("playing with kids! wuf! wuf!")
+      }
+    }
+    var leo = new Labrador("Leo");
+    leo.playWithKids();
   </script>
 </body>
 </html>
