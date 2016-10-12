@@ -1,15 +1,15 @@
-###面向对象编程
+###面向对象编程OOP---Object Oriented Programming
 Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods.
 
 译文：面向对象编程是一套基于‘对象’这个概念的编程方法论。
 一个对象中会包含数据，通常叫‘属性’，也会包含一些函数。通常叫做方法。
 eq:
-var Pan = new Person('Pan');---对象
 class Person{               ---
       constuctor(name){     ---类
         this.name = name
       }
   }
+var Pan = new Person('Pan');---对象  
 类---实例化--->对象
 ####class和object
 object：对象，class：类。
